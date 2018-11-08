@@ -1,6 +1,6 @@
 {
   "name": "mqtt-disciplina-sd-mdcc",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "MQTT com Node.JS",
   "dependencies": {
     "express": "4.16.4",
