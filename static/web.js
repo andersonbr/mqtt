@@ -63,7 +63,12 @@ function updateObjects(data) {
 	var type = data.type;
 	var objId = data.id;
 	var obj = data.desc;
-	
+
+	objs[objId].place = place;
+	objs[objId].floor = floor;
+	objs[objId].ambient = ambient;
+	objs[objId].type = type;
+
 	// criar lugar se nao existir
 	var placeDiv = $(`#places > #${placeId}.place`);
 	if (placeDiv.length == 0) {
