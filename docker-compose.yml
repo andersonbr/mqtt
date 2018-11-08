@@ -2,6 +2,14 @@ version: '2'
 
 services:
 
+  manager1:
+    image: node:latest
+    restart: always
+    command: node manager.js
+    volumes:
+      - ./:/mqtt
+    working_dir: /mqtt
+
   switch1:
     image: node:latest
     restart: always
