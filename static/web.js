@@ -104,7 +104,7 @@ function updateObjects(data) {
 	if (objDiv.length == 0) {
 		$(`#places > #${placeId}.place #${floorId}.floor #${ambientId}.ambient #${typeId}.objType > .card-body`).append(`
 			<div id="${objId}" class="obj card text-black bg-light mb-3" style="color: black">
-				<div class="card-header">${obj}</div>
+				<div class="card-header">${obj} <small>${objId}</small></div>
 				<div class="card-body"></div>
 			</div>`);
 	}
