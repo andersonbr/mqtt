@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+
+  switch1:
+    image: node:latest
+    restart: always
+    command: node client-switch.js
+    volumes:
+      - ./:/mqtt
+    working_dir: /mqtt
+
+  switch2:
+    image: node:latest
+    restart: always
+    command: node client-switch-duplo.js
+    volumes:
+      - ./:/mqtt
+    working_dir: /mqtt
+
+  sensor1:
+    image: node:latest
+    restart: always
+    command: node client-sensor.js
+    volumes:
+      - ./:/mqtt
+    working_dir: /mqtt
+
+  ranger1:
+    image: node:latest
+    restart: always
+    command: node client-ranger.js
+    volumes:
+      - ./:/mqtt
+    working_dir: /mqtt
