@@ -8,6 +8,8 @@ services:
     command: node manager.js
     volumes:
       - ./:/mqtt
+    ports:
+      - "3002:3002"
     working_dir: /mqtt
 
   switch1:
