@@ -7,6 +7,10 @@
   margin-top: 25px !important;
 }
 
+.obj .card-header small {
+  color: #9f9f9f;
+}
+
 .place > .card-body,
 .floor > .card-body,
 .ambient > .card-body,
